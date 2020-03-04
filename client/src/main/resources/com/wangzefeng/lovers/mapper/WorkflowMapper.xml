@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangzefeng.lovers.mapper.WorkflowMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wangzefeng.lovers.domain.entity.Workflow">
+        <id column="workflow_id" property="workflowId" />
+        <result column="workflow_key" property="workflowKey" />
+        <result column="workflow_name" property="workflowName" />
+        <result column="workflow_describe" property="workflowDescribe" />
+        <result column="order_number" property="orderNumber" />
+    </resultMap>
+
+</mapper>

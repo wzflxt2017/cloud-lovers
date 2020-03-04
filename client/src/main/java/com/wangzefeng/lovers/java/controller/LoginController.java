@@ -1,7 +1,7 @@
 package com.wangzefeng.lovers.java.controller;
 
 import com.lovers.base.controller.CommonController;
-import com.wangzefeng.lovers.java.constants.CommonConstants;
+import com.wangzefeng.lovers.constants.CommonConstants;
 import com.wangzefeng.lovers.java.domain.SysUser;
 import com.wangzefeng.lovers.java.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;

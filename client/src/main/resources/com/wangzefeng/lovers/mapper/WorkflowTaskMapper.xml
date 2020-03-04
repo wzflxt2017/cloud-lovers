@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangzefeng.lovers.mapper.WorkflowTaskMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wangzefeng.lovers.domain.entity.WorkflowTask">
+        <id column="task_id" property="taskId" />
+        <result column="business_id" property="businessId" />
+        <result column="start_user_id" property="startUserId" />
+        <result column="start_user_name" property="startUserName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_user_id" property="endUserId" />
+        <result column="end_user_name" property="endUserName" />
+        <result column="end_time" property="endTime" />
+        <result column="node_id" property="nodeId" />
+        <result column="link_id" property="linkId" />
+        <result column="status" property="status" />
+    </resultMap>
+
+</mapper>
