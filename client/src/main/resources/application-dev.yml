@@ -11,7 +11,7 @@ eureka:
     # 因为这是一个单点的EurekaServer，不需要同步其它EurekaServer节点的数据，故设为false
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:10000/eureka/
+      defaultZone: http://localhost:9999/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
     # 设置微服务调用地址为IP优先（缺省为false）
@@ -56,8 +56,8 @@ spring:
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       use-global-data-source-stat: true
 mybatis:
-  mapper-locations: classpath:/com/lovers/java/mapper/*.xml
-  type-aliases-package: com.wangzefeng.lovers.java.domain
+  mapper-locations: classpath:/com/wangzefeng/lovers/mapper/*.xml
+  type-aliases-package: com.wangzefeng.lovers.domain.entity
 logging:
     level:
       com.wangzefeng.lovers.java.mapper: DEBUG

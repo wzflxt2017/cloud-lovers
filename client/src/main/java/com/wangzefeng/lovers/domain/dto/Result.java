@@ -1,4 +1,4 @@
-package com.wangzefeng.lovers.java.dto.common;
+package com.wangzefeng.lovers.domain.dto;
 
 import java.util.HashMap;
 

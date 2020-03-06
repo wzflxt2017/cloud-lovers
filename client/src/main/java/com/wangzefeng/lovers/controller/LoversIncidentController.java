@@ -1,6 +1,7 @@
 package com.wangzefeng.lovers.controller;
 
 
+import com.wangzefeng.lovers.base.CommonController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,6 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @RequestMapping("/lovers-incident")
-public class LoversIncidentController {
+public class LoversIncidentController extends CommonController {
 
 }
