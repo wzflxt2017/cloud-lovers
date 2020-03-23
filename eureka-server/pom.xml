@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.wangzefeng</groupId>
-    <artifactId>eurake-server</artifactId>
+    <artifactId>eureka-server</artifactId>
     <version>1.0.0</version>
     <name>lovers</name>
     <description>Demo project for Spring Boot</description>
