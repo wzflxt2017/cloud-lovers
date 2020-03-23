@@ -1,5 +1,6 @@
-package cn.huanzi.qch.sso.ssoserver;
+package com.wangzefeng.sso.utils;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;

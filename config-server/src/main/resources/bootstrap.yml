@@ -1,0 +1,35 @@
+server:
+  port: 10005
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/KingAndRita/spring-cloud-config.git
+          search-paths: cloud-lovers
+          username: 15779699577
+          password: llxxtt19951002
+          default-label: master #配置文件分支
+
+##eureka
+eureka:
+  client:
+    # 设置是否将自己作为客户端注册到注册中心（缺省true）
+    # 这里为不需要（查看@EnableEurekaServer注解的源码，会发现它间接用到了@EnableDiscoveryClient）
+    register-with-eureka: true
+    # 设置是否从注册中心获取注册信息（缺省true）
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
+#  instance:
+#    instance-id: ${spring.application.name}:${server.port}
+#    # 设置微服务调用地址为IP优先（缺省为false）
+#    prefer-ip-address: true
+#    # 心跳时间，即服务续约间隔时间（缺省为30s）
+#    lease-renewal-interval-in-seconds: 30
+#    # 发呆时间，即服务续约到期时间（缺省为90s）
+#    lease-expiration-duration-in-seconds: 90
+
+

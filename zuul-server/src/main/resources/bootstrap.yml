@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: zuul-server
+  cloud:
+    config:
+      name: zuul-server
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config-server
+management:
+  health:
+    config:
+      enabled: false
+##eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
