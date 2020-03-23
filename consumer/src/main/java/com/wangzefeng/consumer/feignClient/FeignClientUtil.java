@@ -7,5 +7,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(value="eureka-client")
 public interface FeignClientUtil {
     @RequestMapping(value = "/sys-user/index", method = RequestMethod.GET)
-    String getUserName(Integer id);
+    String getUserName();
+
+    @RequestMapping(value = "/sys-user/list", method = RequestMethod.GET)
+    String userList();
+
+    @RequestMapping(value = "/sys-user/getUserById", method = RequestMethod.GET)
+    String getUserById(Integer id);
 }

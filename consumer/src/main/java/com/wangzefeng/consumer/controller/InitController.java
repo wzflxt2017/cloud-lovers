@@ -6,16 +6,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Created by wangzefeng on 2020/3/23 0023.
+ */
 @RestController
-@RequestMapping("/index")
-public class IndexController {
-
+@RequestMapping("/")
+public class InitController {
     @Autowired
     private FeignClientUtil feignClientUtil;
 
-    @RequestMapping(value = "/userList", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
-    public String userList() {
-        return feignClientUtil.userList();
+    @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
+    public String getUserName() {
+        return feignClientUtil.getUserName();
     }
-
 }
